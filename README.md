@@ -38,55 +38,55 @@ git clone https://github.com/RiadGhribi22/iMessenger-chatApp.git
 cd iMessenger-chatApp
 
 ```
-###  Backend Setup
+###  Backend Setup :
 
-Navigate to the server directory:
+1- Navigate to the server directory:
 
 ```
 cd server
 
 ```
-Install server dependencies:
+2- Install server dependencies:
 
 ```
 npm install
 ```
-Create a .env file and add the necessary environment variables (PORT,DATABASE_URL,FRONTEND_URL,SECRET,TOKEN_EXP,COOKIE_EXP).
+3- Create a .env file and add the necessary environment variables (PORT,DATABASE_URL,FRONTEND_URL,SECRET,TOKEN_EXP,COOKIE_EXP).
 
-Start the  server:
+4- Start the  server:
 ```
 npm run start
 ```
 
 ### Frontend Setup
-Navigate to the client directory:
+1- Navigate to the client directory:
 ```
 cd client
 ```
-Install client dependencies:
+2- Install client dependencies:
 ```
 npm install
 ```
-Create a .env file and add the necessary environment variables (REACT_APP_HOST,REACT_APP_SOCKET).
+3- Create a .env file and add the necessary environment variables (REACT_APP_HOST,REACT_APP_SOCKET).
 
-Start client:
+4- Start client:
 ```
 npm start
 ```
 ### Socket Setup :
 
-Navigate to the socket directory:
+1- Navigate to the socket directory:
 
 ```
 cd server
 
 ```
-Install socket dependencies:
+2- Install socket dependencies:
 
 ```
 npm install
 ```
-Start the  socket:
+3- Start the  socket:
 ```
 npm run socket
 ```
