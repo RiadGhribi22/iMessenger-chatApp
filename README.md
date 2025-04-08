@@ -34,8 +34,8 @@ with support for media sharing, message status updates, and a responsive UI.
 ## Clone the repository
 
 ```bash
-git clone https://github.com/your-username/iMessenger.git
-cd iMessenger
+git clone https://github.com/RiadGhribi22/iMessenger-chatApp.git
+cd iMessenger-chatApp
 
 ```
 ###  Backend Setup
