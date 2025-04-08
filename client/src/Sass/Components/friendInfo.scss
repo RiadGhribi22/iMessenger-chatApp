@@ -1,0 +1,116 @@
+.friend-info{
+    padding: 12px 15px;
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+    .button-go-back{
+        width: 50px;
+        cursor:pointer;
+        label{
+            cursor: pointer;
+        }
+    
+    }
+    .image-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .image{
+            height: 80px;
+            width: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            margin-bottom: 5px;
+        }
+        .active-user{
+            color: #76C00D;
+            margin-bottom: 3px;
+        }
+        .name{
+            h4{
+                font-weight: 400;
+                color: var(--text-color);
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .calls{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:10px;
+        margin: 10px 0px;
+        .VoiceCall{
+           width:50%;
+           height: auto;
+        }
+        .VideoCall{
+            width:50%;
+            height: auto;
+        }
+         
+    }
+    .files-chat{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+
+        gap:50px;
+        h1{
+            font-size: 18px;
+            font-weight: 400;
+            color : #4B5155
+        }
+        .files-row{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            .files-row-icon{
+                width:50px;
+                height: 40px;
+            }
+            .name-number{
+                display: flex;
+                flex-direction: column;
+                margin-left: -28px;
+                gap:5px;
+                h2{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color : #7B8793;
+        
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color : #4B5155
+        
+                }
+            }
+            h2{
+                font-size: 14px;
+                font-weight: 400;
+                color : #7B8793;
+
+            }
+            .button-show-more{
+                width: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    #gallery{
+        display: none;
+    }
+    #gallery:checked ~ .gallery{
+        display: grid;
+    }
+}

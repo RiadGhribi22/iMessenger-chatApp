@@ -1,0 +1,250 @@
+.message-show {
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #F9FAFC;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        overflow: hidden;
+    }
+
+    .friend_connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: #7B8793;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .my-message {
+        float: right;
+
+        .my-text {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 370px;
+            flex-direction: column;
+            flex-wrap:nowrap ;
+
+            img.img,
+            span {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                margin: 3px 0px 0px 0px;
+                color: var(--text-color);
+            }
+
+            .my {
+                background-color: var(--my-message-bg);
+                color: var(--text-white);
+            }
+
+            .message-text {
+                text-align: end;
+                padding: 10px;
+                border-top-left-radius: 35px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 35px;
+                max-width: 60%;
+
+
+                img {
+                    width: 270px;
+                    height: 270px;
+                    margin-right: 0px;
+                    overflow: hidden;
+                    border-radius: 15px;
+
+                    object-fit: cover;
+
+                }
+            }
+
+            .my-pdf-content {
+                background-color: #76C03D;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-top-left-radius: 35px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 35px;
+
+                h2 {
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 800;
+                    white-space: nowrap; // Prevents wrapping
+                    overflow: hidden; // Hides overflowing text
+                    text-overflow: ellipsis; // Adds "..."
+                    width: 200px; // Set a fixed width
+                
+                }
+
+                button {
+                    cursor: pointer;
+                    color: #76C03D;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    border: 3px solid #76C03D;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .time {
+            text-align: end;
+            padding: 5px 0px;
+            color: #727272d9;
+            font-size: 12px;
+        }
+    }
+
+    .fd-message {
+        float: left;
+
+        .fd-text {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            width: 370px;
+
+            .fd {
+                background-color: var(--fd-message-bg);
+                color: var(--text-color);
+            }
+
+            .message-text {
+                text-align: start;
+                background-color: #A9B4BF;
+                border-top-right-radius: 40px;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 40px;
+                max-width: 60%;
+
+                
+
+                img {
+                    width: 270px;
+                    height: 270px;
+                    margin-right: 0px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    object-fit: cover;
+
+                }
+            }
+
+            .fd-pdf-content {
+                background-color: #A9B4BF;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-top-right-radius: 40px;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 40px;
+
+                h2 {
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 800;
+
+                }
+
+                button {
+                    cursor: pointer;
+                    color: #A9B4BF;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    border: 3px solid #A9B4BF;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.image-message-time,
+.image-message {
+    display: flex;
+
+    .media-message {
+        max-width: 70%;
+        border-radius: 10px;
+        object-fit: cover;
+        cursor: pointer;
+
+    }
+
+    .fnd_image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .message-text {
+        padding: 8px;
+        color: #fff;
+        background-color: #76C03D;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+
+    video {
+        width: 270px;
+        height: 270px;
+        margin-right: 0px;
+
+    }
+
+    .time {
+        padding: 5px 0px;
+        color: #727272d9;
+        font-size: 12px;
+        animation: messageSlideUp 0.3s ease forwards;
+
+    }
+}
+
+.typing-message {
+    padding: 0px 10px;
+    background-color: hsl(220, 33%, 98%);
+
+    .fd-message {
+        width: 180px;
+    }
+
+}
+
+@keyframes messageSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
