@@ -58,7 +58,7 @@ npm install
 npm run start
 ```
 
-### Frontend Setup
+### Frontend Setup :
 1- Navigate to the client directory:
 ```
 cd client
